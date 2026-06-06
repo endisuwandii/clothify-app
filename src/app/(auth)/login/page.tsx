@@ -9,9 +9,8 @@ import { Label } from "@/components/ui/label";
 import type { LoginResponse } from "@/modules/user/type";
 
 export default function LoginPage() {
-  const router = useRouter(); // Alat untuk pindah halaman di Next.js
+  const router = useRouter();
 
-  // Ini adalah pengganti clientAction
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -47,7 +46,6 @@ export default function LoginPage() {
       // Asumsi token ada di dalam object response
       //   Cookies.set("token", loginResponse.token);
 
-      // Pindah ke dashboard
       router.push("/dashboard");
     } catch (error) {
       console.error(error);
