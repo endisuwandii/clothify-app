@@ -5,7 +5,6 @@ import "./globals.css";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 
-// Setup font bawaan dari preset yang lu pilih tadi
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
