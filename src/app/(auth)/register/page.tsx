@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import type { RegisterResponse } from "@/modules/user/type";
+import type { RegisterResponse } from "@/types/user";
 
 export default function RegisterPage() {
   const router = useRouter();
